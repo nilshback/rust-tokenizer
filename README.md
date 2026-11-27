@@ -15,7 +15,7 @@ It builds its vocabulary automatically as you type and saves it to `vocab.json`.
 
 - `src/main.rs` — the tokenizer
 - `Cargo.toml` — Rust project settings
-- `vocab.json` — the vocabulary (created automatically)
+- `vocab.json` — the vocabulary
 
 ## How to run
 
