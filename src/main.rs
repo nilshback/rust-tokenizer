@@ -43,11 +43,9 @@ fn main() {
     let path = "vocab.json";
     let mut vocab = load_vocab(path);
 
-    println!("Vocabulary currently has {} words.", vocab.len());
-    println!("Type a sentence and press Enter (Ctrl+C to quit):");
+    println!("Type a word, a sentence or whatever:");
 
     loop {
-        print!("> ");
         io::stdout().flush().unwrap();
 
         let mut input = String::new();
@@ -57,9 +55,6 @@ fn main() {
         if input.is_empty() {
             continue;
         }
-
-        let tokens = tokenize_and_update(input, &mut vocab);
-        println!("Tokens: {:?}", tokens);
 
         save_vocab(path, &vocab);
     }
