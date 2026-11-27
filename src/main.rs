@@ -33,6 +33,7 @@ fn tokenize_and_update(text: &str, vocab: &mut HashMap<String, u32>) -> Vec<u32>
             next_id += 1;
             current
         };
+        
         tokens.push(id);
     }
 
